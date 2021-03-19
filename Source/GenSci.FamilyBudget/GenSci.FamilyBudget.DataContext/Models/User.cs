@@ -1,32 +1,39 @@
-﻿namespace GenSci.FamilyBudget.DataContext.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace GenSci.FamilyBudget.DataContext.Models
 {
     /// <summary>
-    /// User entity
+    /// User entity.
     /// </summary>
+    [Table("Users")]
     public class User
     {
         /// <summary>
-        /// User identifier
+        /// User identifier.
         /// </summary>
+        [Key]
         public int UserId { get; set; }
 
         /// <summary>
-        /// User first name
+        /// User first name.
         /// </summary>
+        [MaxLength(100)]
         public string FirstName { get; set; }
 
         /// <summary>
-        /// User second name
+        /// User second name.
         /// </summary>
+        [MaxLength(100)]
         public string SecondName { get; set; }
 
         /// <summary>
-        /// Password hash
+        /// Password hash.
         /// </summary>
         public byte[] PassHash { get; set; }
 
         /// <summary>
-        /// Password salt
+        /// Password salt.
         /// </summary>
         public byte[] PassSalt { get; set; }
     }
