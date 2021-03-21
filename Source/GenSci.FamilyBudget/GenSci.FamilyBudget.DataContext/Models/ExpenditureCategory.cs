@@ -23,5 +23,10 @@ namespace GenSci.FamilyBudget.DataContext.Models
         /// Collection of expenditure places.
         /// </summary>
         public List<ExpenditurePlace> ExpenditurePlaces { get; set; }
+
+        /// <summary>
+        /// Collection of monthly limits.
+        /// </summary>
+        public List<MonthlyLimit> MonthlyLimits { get; set; }
     }
 }
