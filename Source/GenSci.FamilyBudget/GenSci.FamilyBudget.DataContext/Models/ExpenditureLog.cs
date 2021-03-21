@@ -22,5 +22,15 @@ namespace GenSci.FamilyBudget.DataContext.Models
         /// Expenditure note.
         /// </summary>
         public string Note { get; set; }
+
+        /// <summary>
+        /// Expenditure place entity.
+        /// </summary>
+        public ExpenditurePlace ExpenditurePlace { get; set; }
+
+        /// <summary>
+        /// Saved money value entity.
+        /// </summary>
+        public MoneyValue SavedValue { get; set; }
     }
 }

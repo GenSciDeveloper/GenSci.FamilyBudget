@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GenSci.FamilyBudget.DataContext.Models
@@ -35,5 +36,15 @@ namespace GenSci.FamilyBudget.DataContext.Models
         /// Password salt.
         /// </summary>
         public byte[] PassSalt { get; set; }
+
+        /// <summary>
+        /// Collection of expenditure logs.
+        /// </summary>
+        public List<ExpenditureLog> ExpenditureLogs { get; set; }
+
+        /// <summary>
+        /// Collection of income logs.
+        /// </summary>
+        public List<IncomeLog> IncomeLogs { get; set; }
     }
 }

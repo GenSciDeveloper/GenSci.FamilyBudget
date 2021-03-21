@@ -25,5 +25,15 @@ namespace GenSci.FamilyBudget.DataContext.Models
         /// User entity identifier.
         /// </summary>
         public int UserId { get; set; }
+
+        /// <summary>
+        /// User entity.
+        /// </summary>
+        public User User { get; set; }
+
+        /// <summary>
+        /// Money value entity.
+        /// </summary>
+        public MoneyValue MoneyValue { get; set; }
     }
 }
