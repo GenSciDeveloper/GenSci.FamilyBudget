@@ -7,7 +7,6 @@ namespace GenSci.FamilyBudget.DataContext.Models
     /// <summary>
     /// Money value entity.
     /// </summary>
-    [Table("MoneyValues")]
     public class MoneyValue
     {
         /// <summary>

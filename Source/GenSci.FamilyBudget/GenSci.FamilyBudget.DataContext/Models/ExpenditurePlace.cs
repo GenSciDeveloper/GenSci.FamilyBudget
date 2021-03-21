@@ -7,7 +7,6 @@ namespace GenSci.FamilyBudget.DataContext.Models
     /// <summary>
     /// Expenditure place entity.
     /// </summary>
-    [Table("ExpenditurePlaces")]
     public class ExpenditurePlace
     {
         /// <summary>

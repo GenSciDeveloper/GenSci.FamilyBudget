@@ -6,7 +6,6 @@ namespace GenSci.FamilyBudget.DataContext.Models
     /// <summary>
     /// User entity.
     /// </summary>
-    [Table("Users")]
     public class User
     {
         /// <summary>

@@ -6,7 +6,6 @@ namespace GenSci.FamilyBudget.DataContext.Models
     /// <summary>
     /// Money income Log entity.
     /// </summary>
-    [Table("IncomeLogs")]
     public class IncomeLog
     {
         /// <summary>
