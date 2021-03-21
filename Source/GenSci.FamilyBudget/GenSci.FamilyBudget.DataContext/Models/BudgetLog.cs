@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Text;
+
+namespace GenSci.FamilyBudget.DataContext.Models
+{
+    /// <summary>
+    /// Base class for IncomeLog and ExpenditureLog classes
+    /// </summary>
+    public class BudgetLog
+    {
+        /// <summary>
+        /// Income log identifier.
+        /// </summary>
+        [Key]
+        public int BudgetLogId { get; set; }
+
+        /// <summary>
+        /// Money value entity identifier.
+        /// </summary>
+        public int MoneyValueId { get; set; }
+
+        /// <summary>
+        /// User entity identifier.
+        /// </summary>
+        public int UserId { get; set; }
+    }
+}
