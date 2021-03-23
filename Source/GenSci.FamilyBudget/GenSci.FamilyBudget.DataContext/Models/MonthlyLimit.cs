@@ -1,4 +1,5 @@
 ﻿using GenSci.FamilyBudget.DataContext.Enums;
+using System.ComponentModel.DataAnnotations;
 
 namespace GenSci.FamilyBudget.DataContext.Models
 {
@@ -10,6 +11,7 @@ namespace GenSci.FamilyBudget.DataContext.Models
         /// <summary>
         /// Monthly limit identifier.
         /// </summary>
+        [Key]
         public int MonthlyLimitId { get; set; }
 
         /// <summary>
