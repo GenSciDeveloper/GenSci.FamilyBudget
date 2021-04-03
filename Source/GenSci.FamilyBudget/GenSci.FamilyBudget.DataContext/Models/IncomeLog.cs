@@ -1,7 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace GenSci.FamilyBudget.DataContext.Models
+﻿namespace GenSci.FamilyBudget.DataContext.Models
 {
     /// <summary>
     /// Money income Log entity.

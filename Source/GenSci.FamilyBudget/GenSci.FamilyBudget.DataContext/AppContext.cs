@@ -31,7 +31,14 @@ namespace GenSci.FamilyBudget.DataContext
 
         public DbSet<MoneyValue> MoneyValues { get; set; }
 
-        public DbSet<MonthlyLimit> MonthlyLimits { get; set; } 
+        public DbSet<MonthlyLimit> MonthlyLimits { get; set; }
         #endregion
+
+        public AppContext(DbContextOptions<AppContext> options) : base(options)
+        {
+            Database.EnsureCreated();
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) { }
     }
 }
