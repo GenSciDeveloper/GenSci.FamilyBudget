@@ -34,13 +34,13 @@ namespace GenSci.FamilyBudget.DataContext.Models
         public DateTime AddingDate { get; set; }
 
         /// <summary>
-        /// Collection of expenditure logs.
-        /// </summary>
-        public List<ExpenditureLog> ExpenditureLogs { get; set; }
-
-        /// <summary>
         /// Expenditure category entity.
         /// </summary>
         public ExpenditureCategory ExpenditureCategory { get; set; }
+
+        /// <summary>
+        /// Collection of expenditure logs.
+        /// </summary>
+        public List<ExpenditureLog> ExpenditureLogs { get; set; }
     }
 }

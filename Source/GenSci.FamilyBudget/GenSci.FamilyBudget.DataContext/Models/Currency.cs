@@ -39,5 +39,15 @@ namespace GenSci.FamilyBudget.DataContext.Models
         /// Collection of monthly limits.
         /// </summary>
         public List<MonthlyLimit> MonthlyLimits { get; set; }
+
+        /// <summary>
+        /// Collection of exchange rate histories.
+        /// </summary>
+        public List<ExchangeRateHistory> ExchangeRateHistories { get; set; }
+
+        /// <summary>
+        /// Collection of circulation scheduler logs.
+        /// </summary>
+        public List<CirculationScheduler> CirculationSchedulers { get; set; }
     }
 }

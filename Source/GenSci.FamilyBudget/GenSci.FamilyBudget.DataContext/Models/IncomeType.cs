@@ -18,7 +18,7 @@ namespace GenSci.FamilyBudget.DataContext.Models
         /// <summary>
         /// Income type caption
         /// </summary>
-        [Required]
+        [Required, MaxLength(50)]
         public string Caption { get; set; }
 
         /// <summary>
@@ -29,6 +29,6 @@ namespace GenSci.FamilyBudget.DataContext.Models
         /// <summary>
         /// Collection of income logs.
         /// </summary>
-        public List<IncomeLog> MyProperty { get; set; }
+        public List<IncomeLog> IncomeLogs { get; set; }
     }
 }

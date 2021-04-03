@@ -46,5 +46,10 @@ namespace GenSci.FamilyBudget.DataContext.Models
         /// Collection of income logs.
         /// </summary>
         public List<IncomeLog> IncomeLogs { get; set; }
+
+        /// <summary>
+        /// Collection of circulation scheduler logs.
+        /// </summary>
+        public List<CirculationScheduler> CirculationSchedulers { get; set; }
     }
 }

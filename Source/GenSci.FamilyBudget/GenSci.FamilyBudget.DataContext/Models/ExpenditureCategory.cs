@@ -17,6 +17,7 @@ namespace GenSci.FamilyBudget.DataContext.Models
         /// <summary>
         /// Caption of expenditure category.
         /// </summary>
+        [Required, MaxLength(50)]
         public string Caption { get; set; }
 
         /// <summary>
